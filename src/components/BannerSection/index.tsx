@@ -3,7 +3,7 @@ import * as S from './styles'
 import Button from '../Button'
 import Image from '../../assets/banner_image.png'
 
-const Banner = () => {
+const BannerSection = () => {
   return (
     <S.Container>
       <S.BannerInfoWrapper>
@@ -21,4 +21,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default BannerSection
