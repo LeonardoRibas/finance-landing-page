@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 type ButtonStyleProps = {
-  platform?: 'web' | 'mobile'
   variant?: 'primary' | 'secondary'
+  size?: 'large' | 'small'
 }
 
 export const ButtonWrapper = styled.button<ButtonStyleProps>`
@@ -10,12 +10,12 @@ export const ButtonWrapper = styled.button<ButtonStyleProps>`
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: ${(props) => (props.platform === 'mobile' ? '4px' : '8px')};
+  border-radius: 8px;
   padding: ${(props) =>
-    props.platform === 'mobile' ? '8px 16px 8px 16px' : '12px 32px 12px 32px'};
+    props.size === 'small' ? '12px 32px 12px 32px' : '16px 80px 16px 80px'};
   color: ${(props) => props.theme.color.white};
-  font-size: 16px;
-  font-weight: 600;
+  font-size: ${(props) => (props.size === 'small' ? '16px' : '24px')};
+  font-weight: ${(props) => (props.size === 'small' ? '600' : '700')};
   background: ${(props) =>
     props.variant === 'secondary'
       ? props.theme.color.secondary

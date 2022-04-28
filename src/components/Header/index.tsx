@@ -13,7 +13,7 @@ const Header = (props: Props) => {
         <S.Link href="#">Simulação</S.Link>
         <S.Link href="#">Serviços</S.Link>
         <S.Link href="#">Sobre Nós</S.Link>
-        <Button variant="secondary" text="Entre em contato" />
+        <Button variant="secondary" size="small" text="Entre em contato" />
       </S.LinksWrapper>
     </S.Container>
   )
