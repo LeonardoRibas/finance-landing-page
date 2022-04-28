@@ -2,13 +2,18 @@ import React from 'react'
 import * as S from './styles'
 
 type ButtonProps = {
-  variant?: string
+  platform?: 'web' | 'mobile'
+  variant?: 'primary' | 'secondary'
   text: string
 }
 
-const Button = ({ variant, text }: ButtonProps) => {
+const Button = ({
+  platform = 'web',
+  variant = 'primary',
+  text,
+}: ButtonProps) => {
   return (
-    <S.ButtonWrapper>
+    <S.ButtonWrapper variant={variant} platform={platform}>
       <S.Text>{text}</S.Text>
     </S.ButtonWrapper>
   )
