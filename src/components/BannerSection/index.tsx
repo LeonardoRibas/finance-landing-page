@@ -14,7 +14,7 @@ const BannerSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet.
         </S.SubTitle>
-        <Button text="Faça uma Simulação" />
+        <Button size="large" text="Faça uma Simulação" />
       </S.BannerInfoWrapper>
       <S.BannerImage src={Image} />
     </S.Container>
