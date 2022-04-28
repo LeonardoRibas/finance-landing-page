@@ -9,10 +9,12 @@ const Header = (props: Props) => {
   return (
     <S.Container>
       <S.Logo src={Logo} />
-      <S.Text>Simulação</S.Text>
-      <S.Text>Serviços</S.Text>
-      <S.Text>Sobre Nós</S.Text>
-      <Button text="Entre em contato" />
+      <S.LinksWrapper>
+        <S.Link href="#">Simulação</S.Link>
+        <S.Link href="#">Serviços</S.Link>
+        <S.Link href="#">Sobre Nós</S.Link>
+        <Button variant="secondary" text="Entre em contato" />
+      </S.LinksWrapper>
     </S.Container>
   )
 }
