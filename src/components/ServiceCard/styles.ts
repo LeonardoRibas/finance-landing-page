@@ -1,9 +1,22 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 312px;
-  height: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 312px;
 `
-export const Title = styled.h3``
+export const Title = styled.h3`
+  color: ${(props) => props.theme.color.secondary};
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 24px;
+`
 
-export const Text = styled.p``
+export const Text = styled.p`
+  font-size: 20px;
+  color: ${(props) => props.theme.color.text};
+  text-align: center;
+`
