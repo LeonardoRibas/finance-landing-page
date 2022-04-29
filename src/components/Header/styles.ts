@@ -7,7 +7,8 @@ export const Container = styled.nav`
   justify-content: space-between;
   align-items center;
   margin-top: 32px;
-  padding: 0 169px 0 169px;
+  margin-bottom: 56px;
+  padding: 0 15% 0 15%;
 
 `
 
