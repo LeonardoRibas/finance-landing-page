@@ -10,9 +10,10 @@ const AboutUsSection = () => {
         <S.Title>Nós somos Guerra!</S.Title>
         <S.Divider />
         <S.Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-          purus sit amet luctus venenatis, lectus magna fringilla urna,
-          porttitor rhoncus dolor purus non enim praesent elementum facilisis.
+          Aqui na Guerra você contará com um time de peso de especialistas para
+          te ajudar na sua jornada. Profissionais altamente qualificados e com
+          vasta experiência no mercado financeiro estão prontos para batalhar
+          pelos seus resultados!
         </S.Text>
       </S.TextInfoWrapper>
     </S.Container>

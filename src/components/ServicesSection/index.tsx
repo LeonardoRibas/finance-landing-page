@@ -12,17 +12,17 @@ const ServicesSection = () => {
           <MdSupervisorAccount size={56} color={theme.color.secondary} />
         )}
         title="Suporte"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor"
+        text="Com nosso suporte personalizado você terá todo o apio necessário pra investir seu dinheiro da melhor forma possível"
       />
       <ServiceCard
         icon={() => <MdSecurity size={56} color={theme.color.secondary} />}
         title="Segurança"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor"
+        text="Contamos com um sistema robusto e confiável, garantindo a segurança que você precisa para seus dados"
       />
       <ServiceCard
         icon={() => <MdLeaderboard size={56} color={theme.color.secondary} />}
         title="Análise"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor"
+        text="Para direcionar melhor seu dinheiro, conte com análises e relatórios completos sobre seus investimentos"
       />
     </S.Container>
   )
