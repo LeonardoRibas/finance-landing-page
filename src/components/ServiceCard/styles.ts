@@ -5,6 +5,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 312px;
+  margin: 0 32px 0 32px;
+
+  @media (max-width: 1224px) {
+    margin: 32px 0 32px 0;
+  }
 `
 export const Title = styled.h3`
   color: ${(props) => props.theme.color.secondary};

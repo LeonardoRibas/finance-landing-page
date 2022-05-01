@@ -3,8 +3,6 @@ import TextField from '@mui/material/TextField'
 import theme from '../../styles/theme'
 
 export const Container = styled.form`
-  display: flex;
-  flex: 4;
   flex-direction: column;
   justify-content: space-between;
 `
@@ -13,7 +11,10 @@ export const ButtonDiv = styled.div`
   width: 50%;
 `
 
-export const CustomTextField = styled(TextField)({
+export const CustomTextField = styled(TextField).attrs({
+  style: { marginBottom: 24 },
+})({
+  '& .MuiInputBase': {},
   '& .MuiInputBase-input': {
     fontFamily: [
       '-apple-system',

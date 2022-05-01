@@ -1,11 +1,13 @@
 import React from 'react'
 import * as S from './styles'
 import image from '../../assets/team_images3x.png'
+import smallerImage from '../../assets/team_image.png'
 
 const AboutUsSection = () => {
   return (
     <S.Container>
       <S.Image src={image} />
+      <S.SmallerImage src={smallerImage} />
       <S.TextInfoWrapper>
         <S.Title>Nós somos Guerra!</S.Title>
         <S.Divider />

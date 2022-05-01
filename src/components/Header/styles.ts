@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { FiMenu } from 'react-icons/fi'
 
 export const Container = styled.nav`
   display: flex;
@@ -10,6 +11,9 @@ export const Container = styled.nav`
   margin-bottom: 56px;
   padding: 0 15% 0 15%;
 
+  @media (max-width: 1224px) {
+    padding: 0 5% 0 5%;
+  }
 `
 
 export const Logo = styled.img`
@@ -20,10 +24,22 @@ export const Logo = styled.img`
 export const LinksWrapper = styled.div`
   display: flex;
   align-items center;
+  
+  @media (max-width: 1224px) {
+    display: none;
+  }
 `
 export const Link = styled.a`
   color: ${(props) => props.theme.color.secondary};
   font-weight: 400;
   margin-right: 40px;
   text-decoration: none;
+`
+export const HamburguerIcon = styled(FiMenu).attrs((props) => ({
+  size: 24,
+  color: props.theme.color.secondary,
+}))`
+  @media (min-width: 1224px) {
+    display: none;
+  }
 `

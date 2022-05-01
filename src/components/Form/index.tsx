@@ -9,13 +9,20 @@ const Form = () => {
         id="standard-basic"
         label="Nome Completo"
         variant="standard"
+        fullWidth
       />
-      <S.CustomTextField id="standard-basic" label="Email" variant="standard" />
+      <S.CustomTextField
+        id="standard-basic"
+        label="Email"
+        variant="standard"
+        fullWidth
+      />
       <S.CustomTextField
         id="standard-basic"
         label="Telefone"
         variant="standard"
         placeholder="11912341234"
+        fullWidth
       />
       <S.CustomTextField
         id="standard-multiline-static"
@@ -23,6 +30,7 @@ const Form = () => {
         multiline
         rows={5}
         variant="standard"
+        fullWidth
       />
       <S.ButtonDiv>
         <Button

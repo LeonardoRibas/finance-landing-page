@@ -20,18 +20,20 @@ const ContactSection = () => {
         <S.SubTitle>
           Preencha o formulário e entraremos em contato com você
         </S.SubTitle>
-        <ContactInfo
-          icon={() => <FiPhone size={24} color={theme.color.text} />}
-          text="+55 (61) 3081-5555 ou +55 (61) 99249-0548"
-        />
-        <ContactInfo
-          icon={() => <FiMail size={24} color={theme.color.text} />}
-          text="guerra@guerraconsorcios.com.br"
-        />
-        <ContactInfo
-          icon={() => <FiMapPin size={24} color={theme.color.text} />}
-          text="The Union Office (Lt 3, Torre E, sala 06) EPIA Trecho 3 - Asa Sul, Brasília - DF "
-        />
+        <S.ContactInfoWrapper>
+          <ContactInfo
+            icon={() => <FiPhone size={24} color={theme.color.text} />}
+            text="+55 (61) 3081-5555 ou +55 (61) 99249-0548"
+          />
+          <ContactInfo
+            icon={() => <FiMail size={24} color={theme.color.text} />}
+            text="guerra@guerraconsorcios.com.br"
+          />
+          <ContactInfo
+            icon={() => <FiMapPin size={24} color={theme.color.text} />}
+            text="The Union Office (Lt 3, Torre E, sala 06) EPIA Trecho 3 - Asa Sul, Brasília - DF "
+          />
+        </S.ContactInfoWrapper>
         <S.SocialMediaWrapper>
           <FiInstagram size={24} color={theme.color.text} />
           <FiFacebook size={24} color={theme.color.text} />
