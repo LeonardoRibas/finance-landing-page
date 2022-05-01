@@ -10,7 +10,7 @@ type ServiceCardProps = {
 
 const ServiceCard = ({ icon, title, text }: ServiceCardProps) => {
   return (
-    <S.Container>
+    <S.Container data-aos="fade-up">
       {React.createElement(icon)}
       <S.Title>{title}</S.Title>
       <S.Text>{text}</S.Text>

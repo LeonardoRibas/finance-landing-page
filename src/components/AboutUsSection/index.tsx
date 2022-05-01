@@ -6,9 +6,9 @@ import smallerImage from '../../assets/team_image.png'
 const AboutUsSection = () => {
   return (
     <S.Container>
-      <S.Image src={image} />
-      <S.SmallerImage src={smallerImage} />
-      <S.TextInfoWrapper>
+      <S.Image src={image} data-aos="fade-right" />
+      <S.SmallerImage src={smallerImage} data-aos="fade-right" />
+      <S.TextInfoWrapper data-aos="fade-left">
         <S.Title>Nós somos Guerra!</S.Title>
         <S.Divider />
         <S.Text>

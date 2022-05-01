@@ -14,7 +14,7 @@ import theme from '../../styles/theme'
 
 const ContactSection = () => {
   return (
-    <S.Container>
+    <S.Container data-aos="fade-up">
       <S.TextInfoWrapper>
         <S.Title>Entre em contato</S.Title>
         <S.SubTitle>

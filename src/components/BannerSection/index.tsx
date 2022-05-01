@@ -7,7 +7,7 @@ import theme from '../../styles/theme'
 const BannerSection = () => {
   return (
     <S.Container>
-      <S.BannerInfoWrapper>
+      <S.BannerInfoWrapper data-aos="fade-right">
         <S.MainTitle>
           Comece hoje sua jornada de investimentos com a{' '}
           <span style={{ color: theme.color.primary }}>Guerra Consórcios</span>
@@ -17,7 +17,7 @@ const BannerSection = () => {
         </S.SubTitle>
         <Button size="large" text="Faça uma Simulação" />
       </S.BannerInfoWrapper>
-      <S.BannerImage src={Image} />
+      <S.BannerImage src={Image} data-aos="fade-left" />
     </S.Container>
   )
 }
